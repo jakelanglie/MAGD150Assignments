@@ -7,6 +7,7 @@
   
   
 
+
 boolean mState = false;
 void setup(){
 size(800, 600);
@@ -59,6 +60,15 @@ ellipse(700,50,100,100);
    rect(mouseX+30,mouseY-35,5,35);
    rect(mouseX-30,mouseY-35,60,5,10);
 }
+}
+
+ 
+  
+
+//using mouse press to show scenes
+void mousePressed(){
+mState = !mState;
+println("changed!");
 }
 
  
